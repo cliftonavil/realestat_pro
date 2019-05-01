@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'assets/css/all.css' %}">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+  <!-- Custom -->
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+  <!-- Light box -->
+  <link rel="stylesheet" href="{% static 'assets/css/lightbox.min.css' %}">
+  <title>Real Estate 
+  {% block title %}
+    
+  {% endblock title %}
+    </title>
+</head>
+<body>
+
+    <!--top bar  -->
+    {% include 'partial/_topbar.html' %}
+     <!--nav bar  -->
+    {% include 'partial/_navbar.html' %}
+    
+  {% block content %}{% endblock %}
+    <!--footer -->
+    {% include 'partial/_footer.html' %}
+  
+    <!-- JS section -->
+  <script src="{% static 'assets/js/jquery-3.3.1.min.js' %} "></script>
+  <script src="{% static 'assets/js/bootstrap.bundle.min.js' %} "></script>
+  <script src="{% static 'assets/js/main.js' %} "></script>
+  <script src="{% static 'assets/js/lightbox.min.js' %} "></script>
+</body>
+</html>

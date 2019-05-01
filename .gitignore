@@ -1,0 +1,11 @@
+db.sqlite3
+.pyc
+debug.py
+migrations
+env
+.idea
+__pycache__
+media/
+recent.log
+venv
+.vscode
